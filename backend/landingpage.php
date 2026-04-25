@@ -58,11 +58,12 @@
     <div class="containerUlasan p-16">
         <div class="judul">
             <P> ULASAN</P>
-            <P>"koleksi buku terbaru SMKN 10 sudah mendarat. dari panduan 
+            <P>-"koleksi buku terbaru SMKN 10 sudah mendarat. dari panduan 
                 coding paling update sampai buku pengembangan diri yang
                 bikin kamu makin glow up secara mindset. cek sekarang
                 sebelum keduluan yang lain"
             </P>
+            <P>-"membaca tuh asik, yuk banyakin baca. pinjam lewat perpus sekolah ya!"</P>
         </div>
         <div class="isi py-16 flex justify-around">
             <div class="card bg-primary text-primary-content w-96">
@@ -77,7 +78,7 @@
         </div>
     </div>
 
-    <div class="containerAjuan text-center p-16">
+    <div class="containerAjuan text-center p-20">
         <div class="judul">
             <P class="text-xl font-semibold">Request buku favoritmu, kami wujudkan!</P>
             <p>punya referensi keren tapi belum ada di perpustakaan?
@@ -85,20 +86,27 @@
                 dan bantu kami bangun koleksi paling hype di SMKN 10.
             </p>
         </div>
-        <div class="isi">
-            <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-  <legend class="fieldset-legend">Login</legend>
+      
+        <div class="card bg-base-200 w-full ">
 
-  <label class="label">Email</label>
-  <input type="email" class="input" placeholder="Email" />
-
-  <label class="label">Password</label>
-  <input type="password" class="input" placeholder="Password" />
-
-  <button class="btn btn-neutral mt-4">Login</button>
-</fieldset>
-        </div>
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div class="text-center lg:text-left">
+      <h1 class="text-5xl font-bold">Login now!</h1>
     </div>
+    <div class="card bg-base-300 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Email</label>
+          <input type="email" class="input" placeholder="Email" />
+          <label class="label">Password</label>
+          <input type="password" class="input" placeholder="Password" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button class="btn btn-neutral mt-4">Login</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
 
     <div class="containerDaftar p-16">
         <div class="judul text-center">
@@ -116,45 +124,41 @@
     <thead>
       <tr>
         <th></th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Judul Buku</th>
+        <th>Kategori</th>
+        <th>Penerbit</th>
       </tr>
     </thead>
     <tbody>
       <!-- row 1 -->
       <tr>
         <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td>Clean Code</td>
+        <td>Software Engineering</td>
+        <td>Prentice Hall</td>
       </tr>
       <!-- row 2 -->
       <tr class="hover:bg-base-300">
         <th>2</th>
-        <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
+        <td>Eloquent Javascript</td>
+        <td>Web Development</td>
+        <td>No Starch Press</td>
       </tr>
       <!-- row 3 -->
       <tr>
         <th>3</th>
-        <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
+        <td>Pemrograman Web Dengan PHP</td>
+        <td>Backend Development</td>
+        <td>Informatika</td>
       </tr>
-    </tbody>
+      <!--row 4-->
+      <th>4</th>
+      <td>Basis data Relasional</td>
+      <td>Database</td>
+      <td>Andi Offset</td>
+    </body>
   </table>
 </div>
-        </div>
-    </div>
-
-    <div class="containerFooter">
-        <div class="judul"></div>
-        <div class="isi">
-            <?php
-            require "footer.php";
-            ?>
         </div>
     </div>
 <div class="containerfaq">
@@ -192,14 +196,23 @@
                 <div class="hero-overlay"></div>
                 <div class="hero-content text-neutral-content text-center">
                     <div class="max-w-md">
-                        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                        <h1 class="mb-5 text-5xl font-bold">yuk!</h1>
                         <p class="mb-5">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
+                           coding butuh logika, tapi logika butuh inspirasi dari membaca
                         </p>
-                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-primary">ayo mulai!</button>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="containerFooter">
+        <div class="judul"></div>
+        <div class="isi">
+            <?php
+            require "footer.php";
+            ?>
         </div>
     </div>
 </html>
